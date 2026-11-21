@@ -14,16 +14,43 @@ This repo turns those rules into a skill file an agent can follow: what to do, w
 
 | # | Rule | In one line | Video |
 |---|---|---|---|
-| 1 | Skeleton loaders | Show the page's shape while content loads, not a spinner | [▶ watch](https://video.twimg.com/amplify_video/2123786393965248512/vid/avc1/720x720/a8v7pzwc98Zrb3MB.mp4) |
-| 2 | Optimistic UI | Update the screen on tap and save in the background | [▶ watch](https://video.twimg.com/amplify_video/2123786393973645312/vid/avc1/720x720/EjnWXXHVvCC_LOqw.mp4) |
-| 3 | Tabular numbers | Fixed-width digits stop numbers from jumping | [▶ watch](https://video.twimg.com/amplify_video/2123786394011348992/vid/avc1/720x720/Up1hSCyR9Rv8kcvo.mp4) |
-| 4 | Squircle corners | Continuous corners (about 60% smoothing) to match iOS | [▶ watch](https://video.twimg.com/amplify_video/2123786394015502336/vid/avc1/720x720/vjzd6xiGBLnnUo5Z.mp4) |
-| 5 | Swipe to dismiss | Let people drag a sheet down to close it | [▶ watch](https://video.twimg.com/amplify_video/2123786394011312128/vid/avc1/720x720/hniftgz0SFkAByfG.mp4) |
-| 6 | Shared element transitions | The tapped card grows into the next screen | [▶ watch](https://video.twimg.com/amplify_video/2123786393998761984/vid/avc1/720x720/-3Zc1HbDj-crqLMT.mp4) |
-| 7 | SMS code autofill | Let the keyboard fill the code in one tap | [▶ watch](https://video.twimg.com/amplify_video/2123786393990393856/vid/avc1/720x720/VYfUkt8ep_xc70LW.mp4) |
-| 8 | Undo instead of confirm | Delete right away and show an Undo button | [▶ watch](https://video.twimg.com/amplify_video/2123786394082648064/vid/avc1/720x720/NGLYeE0ukC9F7UTl.mp4) |
-| 9 | Balanced line breaks | Never leave one word alone on the last line | [▶ watch](https://video.twimg.com/amplify_video/2123786393986211840/vid/avc1/720x720/3YY-U_E-9FDQupYm.mp4) |
-| 10 | Blur placeholders | Show a soft preview until the photo loads | [▶ watch](https://video.twimg.com/amplify_video/2123786394007216128/vid/avc1/720x720/756H26Op2malDHKp.mp4) |
+| 1 | Skeleton loaders | Show the page's shape while content loads, not a spinner | [▶ clip](media/rule-01.mp4) |
+| 2 | Optimistic UI | Update the screen on tap and save in the background | [▶ clip](media/rule-02.mp4) |
+| 3 | Tabular numbers | Fixed-width digits stop numbers from jumping | [▶ clip](media/rule-03.mp4) |
+| 4 | Squircle corners | Continuous corners (about 60% smoothing) to match iOS | [▶ clip](media/rule-04.mp4) |
+| 5 | Swipe to dismiss | Let people drag a sheet down to close it | [▶ clip](media/rule-05.mp4) |
+| 6 | Shared element transitions | The tapped card grows into the next screen | [▶ clip](media/rule-06.mp4) |
+| 7 | SMS code autofill | Let the keyboard fill the code in one tap | [▶ clip](media/rule-07.mp4) |
+| 8 | Undo instead of confirm | Delete right away and show an Undo button | [▶ clip](media/rule-08.mp4) |
+| 9 | Balanced line breaks | Never leave one word alone on the last line | [▶ clip](media/rule-09.mp4) |
+| 10 | Blur placeholders | Show a soft preview until the photo loads | [▶ clip](media/rule-10.mp4) |
+
+## See each rule in action
+
+Clips from [@jaimintf's post](https://x.com/jaimintf/status/2123786458721116225). Each one shows the bad version next to the good one.
+
+<table>
+<tr>
+<td align="center" width="50%"><b>1. Skeleton loaders</b><br><img src="media/rule-01.gif" width="360" alt="Skeleton loaders: bad vs good"></td>
+<td align="center" width="50%"><b>2. Optimistic UI</b><br><img src="media/rule-02.gif" width="360" alt="Optimistic UI: bad vs good"></td>
+</tr>
+<tr>
+<td align="center" width="50%"><b>3. Tabular numbers</b><br><img src="media/rule-03.gif" width="360" alt="Tabular numbers: bad vs good"></td>
+<td align="center" width="50%"><b>4. Squircle corners</b><br><img src="media/rule-04.gif" width="360" alt="Squircle corners: bad vs good"></td>
+</tr>
+<tr>
+<td align="center" width="50%"><b>5. Swipe to dismiss</b><br><img src="media/rule-05.gif" width="360" alt="Swipe to dismiss: bad vs good"></td>
+<td align="center" width="50%"><b>6. Shared element transitions</b><br><img src="media/rule-06.gif" width="360" alt="Shared element transitions: bad vs good"></td>
+</tr>
+<tr>
+<td align="center" width="50%"><b>7. SMS code autofill</b><br><img src="media/rule-07.gif" width="360" alt="SMS code autofill: bad vs good"></td>
+<td align="center" width="50%"><b>8. Undo instead of confirm</b><br><img src="media/rule-08.gif" width="360" alt="Undo instead of confirm: bad vs good"></td>
+</tr>
+<tr>
+<td align="center" width="50%"><b>9. Balanced line breaks</b><br><img src="media/rule-09.gif" width="360" alt="Balanced line breaks: bad vs good"></td>
+<td align="center" width="50%"><b>10. Blur placeholders</b><br><img src="media/rule-10.gif" width="360" alt="Blur placeholders: bad vs good"></td>
+</tr>
+</table>
 
 The full skill, with implementation notes and a pre-ship checklist, is in [`native-feel-ui-rules/SKILL.md`](native-feel-ui-rules/SKILL.md).
 

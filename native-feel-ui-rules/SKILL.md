@@ -31,7 +31,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 ---
 
 ## 1. Skeleton loaders
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786393965248512/vid/avc1/720x720/a8v7pzwc98Zrb3MB.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-01.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Show the page's shape while content loads.
 - Draw light-gray placeholder blocks with rounded corners that match the real layout exactly: avatar circle, text lines (vary widths, the last line shorter), image block, buttons.
@@ -42,7 +42,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - Flutter: `skeletonizer` or `shimmer` package. SwiftUI: `.redacted(reason: .placeholder)` plus a shimmer overlay. React Native: `react-native-reanimated` shimmer or `moti` skeleton.
 
 ## 2. Optimistic UI
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786393973645312/vid/avc1/720x720/EjnWXXHVvCC_LOqw.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-02.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Update the screen on tap and save in the background.
 - On tap, change the UI state immediately: fill the heart, bump the count, check the box, add the item.
@@ -52,7 +52,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - Use for low-risk, reversible actions only. Payments, purchases and anything irreversible still wait for the server.
 
 ## 3. Tabular numbers
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786394011348992/vid/avc1/720x720/Up1hSCyR9Rv8kcvo.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-03.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Fixed-width digits stop numbers from jumping.
 - Any number that changes in place (balances, prices, counters, timers, countdowns, calorie and macro totals, prayer-time countdowns, progress percentages, stats tables) must use tabular figures.
@@ -61,7 +61,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - For animated counters, combine with a numeric content transition (SwiftUI `.contentTransition(.numericText())`).
 
 ## 4. Squircle corners
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786394015502336/vid/avc1/720x720/vjzd6xiGBLnnUo5Z.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-04.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Use continuous corners (corner smoothing about 60%) to match iOS.
 - A plain border radius turns from straight line to arc abruptly. iOS uses a continuous curve that eases in.
@@ -70,7 +70,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - Keep radii consistent across the app (define them as design tokens, for example 8, 12, 16, 24) and make nested radii concentric (inner radius = outer radius minus padding).
 
 ## 5. Swipe to dismiss
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786394011312128/vid/avc1/720x720/hniftgz0SFkAByfG.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-05.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Let people drag a sheet down to close it.
 - Every bottom sheet, modal and picker shows a small gray grab handle (pill) at the top and follows the finger 1:1 when dragged down.
@@ -81,7 +81,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - SwiftUI: `.sheet` with `.presentationDetents` and `.presentationDragIndicator(.visible)`. Flutter: `showModalBottomSheet(showDragHandle: true, enableDrag: true)` or `DraggableScrollableSheet`; for iOS feel use `CupertinoSheetRoute` / `modal_bottom_sheet`. React Native: `@gorhom/bottom-sheet`.
 
 ## 6. Shared element transitions
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786393998761984/vid/avc1/720x720/-3Zc1HbDj-crqLMT.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-06.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** The tapped card grows into the next screen.
 - When a card, thumbnail or list row opens a detail page, morph the shared element (usually the image, sometimes the title) from its spot in the list into its spot on the detail page.
@@ -91,7 +91,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - Use stable unique tags (item id), never list index.
 
 ## 7. SMS code autofill
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786393990393856/vid/avc1/720x720/VYfUkt8ep_xc70LW.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-07.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Let the keyboard fill the code in one tap.
 - Every OTP or verification field must support system autofill so the code appears above the keyboard ("From Messages 123456") and fills every box with one tap.
@@ -100,7 +100,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - For email codes, use the same field setup (iOS also suggests codes from Mail).
 
 ## 8. Undo instead of confirm
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786394082648064/vid/avc1/720x720/NGLYeE0ukC9F7UTl.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-08.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Delete right away and show an Undo button.
 - For reversible destructive actions (delete a meal entry, remove a saved place, archive, clear a list item), remove the item immediately with a smooth collapse animation and show a non-blocking toast/snackbar at the bottom: "Meal deleted" with an **Undo** button.
@@ -110,7 +110,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - Flutter: `ScaffoldMessenger.showSnackBar` with a `SnackBarAction(label: 'Undo')`, `Dismissible` for swipe. SwiftUI: custom bottom toast overlay with a timer. React Native: a toast library with an action button.
 
 ## 9. Balanced line breaks
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786393986211840/vid/avc1/720x720/3YY-U_E-9FDQupYm.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-09.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Don't leave one word alone on the last line.
 - Headlines, titles, onboarding and paywall copy, empty states, card titles and button labels must not end with a single orphan word.
@@ -119,7 +119,7 @@ Goal: the app should behave the way iOS (and modern Android) users already expec
 - Test in every localized language (Arabic, Japanese, Indonesian, Malay and others), because translations change the break points. Never insert hard line breaks in translatable strings.
 
 ## 10. Blur placeholders
-[Watch the bad vs good video](https://video.twimg.com/amplify_video/2123786394007216128/vid/avc1/720x720/756H26Op2malDHKp.mp4) · [original post](https://x.com/jaimintf/status/2123786458721116225)
+[Watch the bad vs good video](https://github.com/mokhselim/native-feel-ui-rules/blob/main/media/rule-10.gif) · [original post](https://x.com/jaimintf/status/2123786458721116225)
 
 **Rule:** Show a soft preview until the photo loads.
 - Every remote image shows a blurred preview built from that photo's own colors (BlurHash or ThumbHash) instead of a gray box with an image icon.
